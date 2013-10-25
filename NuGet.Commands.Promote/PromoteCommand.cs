@@ -25,6 +25,7 @@ namespace NuGet.Commands
             this._sourceProvider = SourceProvider;
         }
 
+        /*
         [Option(typeof(Promote.PromoteResources), "SourceDescription", AltName = "src")]
         public string Source { get; set; }
 
@@ -39,6 +40,7 @@ namespace NuGet.Commands
 
         [Option(typeof(Promote.PromoteResources), "ApiKeyDescription")]
         public string ApiKey { get; set; }
+        */
 
         public override void ExecuteCommand()
         {
