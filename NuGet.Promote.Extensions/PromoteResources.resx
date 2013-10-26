@@ -126,4 +126,7 @@
   <data name="SourceDescription" xml:space="preserve">
     <value>The location to look for packages</value>
   </data>
+  <data name="UsageSummaryDescription" xml:space="preserve">
+    <value>&lt;packageId&gt;</value>
+  </data>
 </root>

@@ -30,14 +30,30 @@ namespace NuGet.Commands.Promote.Test
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.RedirectStandardError = true;
-            p.StartInfo.EnvironmentVariables.Add("NUGET_EXTENSIONS_PATH", this._workingDirectory);
 
             p.Start();
 
             p.WaitForExit();
-            var output = p.StandardOutput.ReadToEnd();
-            Console.Write(p.StandardOutput.ReadToEnd());
             Assert.AreEqual(0, p.ExitCode);
+        }
+
+        [TestMethod]
+        public void TestHelpCommand()
+        {
+            var p = new Process();
+            p.StartInfo = new ProcessStartInfo();
+
+            p.StartInfo.FileName = "nuget.exe";
+            p.StartInfo.Arguments = "help promote";
+            p.StartInfo.WorkingDirectory = this._workingDirectory;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardError = true;
+            p.StartInfo.RedirectStandardOutput = true;
+            
+            p.Start();
+
+            var output = p.StandardOutput.ReadToEnd();
+            Assert.AreEqual("usage: NuGet promote <packageId>", output.Substring(0, output.IndexOf("\r")));
         }
     }
 }

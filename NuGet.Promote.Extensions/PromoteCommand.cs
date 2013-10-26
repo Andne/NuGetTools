@@ -11,7 +11,8 @@ using NuGet.Commands;
 
 namespace NuGet.Commands
 {
-    [Command(typeof(Promote.PromoteResources), "promote", "Description", MaxArgs = 1)]
+    [Command(typeof(Promote.PromoteResources), "promote", "Description", MaxArgs = 1,
+        UsageSummaryResourceName="UsageSummaryDescription")]
     public class PromoteCommand : Command
     {
         /*

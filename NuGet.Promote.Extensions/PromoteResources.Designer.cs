@@ -86,5 +86,14 @@ namespace NuGet.Commands.Promote {
                 return ResourceManager.GetString("SourceDescription", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;packageId&gt;.
+        /// </summary>
+        internal static string UsageSummaryDescription {
+            get {
+                return ResourceManager.GetString("UsageSummaryDescription", resourceCulture);
+            }
+        }
     }
 }
