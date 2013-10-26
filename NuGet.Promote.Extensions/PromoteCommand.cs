@@ -7,15 +7,12 @@ using System.Text;
 using NuGet;
 using NuGet.Commands;
 
-// Use NUGET_EXTENSIONS_PATH environment variable for testing
-
-namespace NuGet.Commands
+namespace NuGet.Promote
 {
-    [Command(typeof(Promote.PromoteResources), "promote", "Description", MaxArgs = 1,
+    [Command(typeof(PromoteResources), "promote", "Description", MaxArgs = 1,
         UsageSummaryResourceName="UsageSummaryDescription")]
     public class PromoteCommand : Command
     {
-        /*
         [Option(typeof(Promote.PromoteResources), "SourceDescription", AltName = "src")]
         public string Source { get; set; }
 
@@ -30,7 +27,6 @@ namespace NuGet.Commands
 
         [Option(typeof(Promote.PromoteResources), "ApiKeyDescription")]
         public string ApiKey { get; set; }
-        */
 
         public override void ExecuteCommand()
         {

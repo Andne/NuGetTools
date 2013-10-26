@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ApiKeyDescription" xml:space="preserve">
+    <value>The API key for the destination server</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Promotes a package from one repository to the next, optionally removing any prerelease version in the process</value>
   </data>
@@ -126,7 +129,13 @@
   <data name="SourceDescription" xml:space="preserve">
     <value>The location to look for packages</value>
   </data>
+  <data name="StripPrereleaseVersionDescription" xml:space="preserve">
+    <value>Remove any prerelease version information from the package while promoting.  Keeps the Major.Minor.Patch information</value>
+  </data>
   <data name="UsageSummaryDescription" xml:space="preserve">
     <value>&lt;packageId&gt;</value>
+  </data>
+  <data name="VersionDescription" xml:space="preserve">
+    <value>Version of the package to promote</value>
   </data>
 </root>
