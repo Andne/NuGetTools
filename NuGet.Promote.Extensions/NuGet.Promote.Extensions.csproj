@@ -54,6 +54,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PromoteResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="PromoteResources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromoteResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
