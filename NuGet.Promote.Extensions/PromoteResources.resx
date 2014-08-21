@@ -133,7 +133,7 @@
     <value>Remove any prerelease version information from the package while promoting.  Keeps the Major.Minor.Patch information</value>
   </data>
   <data name="UsageSummaryDescription" xml:space="preserve">
-    <value>&lt;packageId&gt;</value>
+    <value>&lt;packageId&gt; [options]</value>
   </data>
   <data name="VersionDescription" xml:space="preserve">
     <value>Version of the package to promote</value>
